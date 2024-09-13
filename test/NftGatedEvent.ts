@@ -18,7 +18,7 @@ describe("NftGatedEvent", () => {
     nftToken = await NFTFactory.deploy() as EventNFT;
     await nftToken.deployed();
 
-    // Deploy the NftGatedEvent contract with the NFT address
+
     const EventFactory = await ethers.getContractFactory("NftGatedEvent");
     eventContract = await EventFactory.deploy(nftToken.address) as NftGatedEvent;
     await eventContract.deployed();
