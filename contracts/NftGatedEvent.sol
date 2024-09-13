@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
 contract NftGatedEvent {
 
-  IERC721 public nftTokenAddress;
+  address public nftTokenAddress;
   address public owner;
  
  
@@ -27,6 +27,7 @@ contract NftGatedEvent {
   
   mapping(address => Event[]) createdEvents;
   mapping(address => bool) hasRegistered;
+  
   constructor(address _nftTokenAddress) {
     require(_nftTokenAddress != address(0), "Address Zero Detected");
    
