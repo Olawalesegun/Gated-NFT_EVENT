@@ -6,7 +6,6 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 contract NftGatedEvent {
 
   address public nftTokenAddress;
-  address public owner;
  
  
   struct Event {
