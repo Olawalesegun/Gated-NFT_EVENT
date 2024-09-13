@@ -28,6 +28,7 @@ contract NftGatedEvent {
   
   constructor(address _nftTokenAddress) {
     require(_nftTokenAddress != address(0), "Address Zero Detected");
+    nftTokenAddress = _nftTokenAddress;
    
   }
 
