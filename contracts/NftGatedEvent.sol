@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
 contract NftGatedEvent {
 
-  address public nftTokenAddress;
+  IERC721 public nftTokenAddress;
   address public owner;
  
  
@@ -45,6 +45,7 @@ contract NftGatedEvent {
       }
 
       IERC721 _nftToken = IERC721(nftTokenAddress);
+      
       if(_nftToken.balanceOf(msg.sender) < 1) {
         revert YouHaveToMintAnNFT();
       }
