@@ -4,6 +4,7 @@
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "@openzeppelin/test-helpers": "^0.5.16",
     "chai": "^4.5.0",
+    "dotenv": "^16.4.5",
     "ethers": "^6.13.2",
     "hardhat": "^2.22.10"
   },
